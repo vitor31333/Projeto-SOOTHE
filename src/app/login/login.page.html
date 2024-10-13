@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container-log">
+    <h1>SOOTHE</h1>
+    <h4>Fazer Login</h4>
+    <ion-item>
+      <ion-label expand="block" position="floating">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label expand="block" position="floating">Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="fazerLogin()">Login</ion-button>
+    <ion-button expand="block" (click)="signIn()" *ngIf="!user">Faça Login com o Google</ion-button>
+    <ion-button expand="block" (click)="signOut()" *ngIf="user"> Sign out</ion-button>
+    <a routerLink="/cadastro" class="texto-ancora">Não possui conta? Cadastrar-se</a>
+  </div>
+</ion-content>
+

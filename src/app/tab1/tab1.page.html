@@ -1,17 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title class="titulos">
+      Dicas
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+  <div class="card-conteiner">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Dicas para melhorar sua saúde:</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+              <ion-label>Meditação: Praticar meditação diariamente pode ajudar a acalmar a mente e reduzir a ansiedade tente sempre fazer meditação e controlar sua respiração em diversos momentos do seu dia</ion-label>
+          </ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+          <ion-item>
+            <ion-label>Pratique exercícios físicos: A atividade física regular libera endorfinas, que são hormônios que promovem a sensação de bem-estar</ion-label>
+          </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+          <ion-item>
+            <ion-label>Ouça música relaxante: A música pode ter um efeito calmante e ajudar a melhorar o humor</ion-label>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label>Criar distrações: Quando alguém está imerso em um estado de ansiedade que o impede de pensar com clareza, criar distrações que evitem pensamentos nocivos é uma ferramenta valiosa. Nesse sentido, pensar em atividades prazerosas vai gerar uma remissão temporária dos sintomas de ansiedade.</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+   </ion-card>
+  </div>
+    <ion-button (click)="abrirlink()">Mais informações? Clique Aqui</ion-button>
+  </ion-content>
+
+
+
+  

@@ -1,17 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
+    <ion-title class="titulos">
+      Perfil
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <div class="card3-conteiner">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Vitor Canto</ion-card-title>
+        <ion-card-subtitle>Ingressou:3/10/2024</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-avatar slot="start">
+          <img src="assets/imgs/icon.png" alt="Foto">
+        </ion-avatar>
+        <div class="p-estilo">
+          <h1>Email: vtrexemploemail.com<br>Senha:*******</h1>
+          <p><strong>Idade:</strong> 21</p>
+          <p><strong>Gênero:</strong> Masculino</p>
+          <p><strong>Objetivo Principal:</strong> Melhorar o Sono</p>
+          <p><strong>Nível de Estresse:</strong> Médio</p>
+          <p><strong>Qualidade do Sono:</strong> Ruim</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-button routerLink="/login">Desconectar</ion-button>
 </ion-content>
+
+

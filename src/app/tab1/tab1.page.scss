@@ -1,0 +1,39 @@
+.card-conteiner{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+.ion-card {
+    border-radius: 40px;
+    width: 100%; 
+}
+
+ion-card {
+    background-color: #ebf8ea;
+}
+
+ion-item{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#151F16;
+    background-color: #ebf8ea;
+    --background: #ebf8ea;
+}
+
+ion-card-title{
+    --color:#151F16;
+}
+
+ion-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15%;
+    --background: #ebf8ea;
+    --background-activated:#adfa9a;
+}
+
+

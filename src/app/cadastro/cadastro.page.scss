@@ -1,0 +1,35 @@
+.container-cadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  
+ion-item {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    --background: transparent;
+  }
+  
+  
+  ion-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    --background: #ebf8ea;
+    --background-activated:#adfa9a;
+  }
+  
+  ion-button {
+    width: 60%;
+    max-width: 200px;
+    margin-top: 15px;
+    --background: #ebf8ea;
+    --background-activated:#adfa9a;
+  }
+  

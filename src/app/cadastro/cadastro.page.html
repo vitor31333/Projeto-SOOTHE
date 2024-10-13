@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content div="container-cadas">
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input type="text" [(ngModel)]="nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="password" [(ngModel)]="senha"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Confirmar Senha</ion-label>
+    <ion-input type="password" [(ngModel)]="confsenha"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="fazerCadastro()">Cadastrar</ion-button>
+

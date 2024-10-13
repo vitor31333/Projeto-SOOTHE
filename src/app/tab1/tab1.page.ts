@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
-
+  abrirlink() {
+    window.open('https://blog.cliquebemestar.com.br/dicas-para-se-manter-calmo/');
+  }
 }
+
