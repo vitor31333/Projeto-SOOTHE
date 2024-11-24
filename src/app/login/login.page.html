@@ -13,10 +13,16 @@
       <ion-label expand="block" position="floating">Senha</ion-label>
       <ion-input type="password" [(ngModel)]="senha"></ion-input>
     </ion-item>
-    <ion-button expand="block" (click)="fazerLogin()">Login</ion-button>
+    <ion-button expand="block" (click)="loginUser()">Login</ion-button>
     <ion-button expand="block" (click)="signIn()" *ngIf="!user">Faça Login com o Google</ion-button>
     <ion-button expand="block" (click)="signOut()" *ngIf="user"> Sign out</ion-button>
     <a routerLink="/cadastro" class="texto-ancora">Não possui conta? Cadastrar-se</a>
   </div>
+  <ion-toast
+  [isOpen]="isToastOpen"
+  message="Email ou Senha Inválidos."
+  [duration]="5000"
+  (didDismiss)="setOpen(false)"
+></ion-toast>
 </ion-content>
 

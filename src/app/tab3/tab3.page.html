@@ -10,8 +10,9 @@
   <div class="card3-conteiner">
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Vitor Canto</ion-card-title>
-        <ion-card-subtitle>Ingressou:3/10/2024</ion-card-subtitle>
+        <div *ngIf="user; else noUser">  <p class="texto-card">Bem-vindo, {{ user.name }}!</p> <br> <p class="texto-card">{{user.email}}</p>  
+        </div> 
+        <ng-template #noUser> <p class="texto-card">Nenhum usuário</p> </ng-template>
       </ion-card-header>
     
       <ion-card-content>
@@ -19,17 +20,13 @@
           <img src="assets/imgs/icon.png" alt="Foto">
         </ion-avatar>
         <div class="p-estilo">
-          <h1>Email: vtrexemploemail.com<br>Senha:*******</h1>
-          <p><strong>Idade:</strong> 21</p>
-          <p><strong>Gênero:</strong> Masculino</p>
-          <p><strong>Objetivo Principal:</strong> Melhorar o Sono</p>
-          <p><strong>Nível de Estresse:</strong> Médio</p>
-          <p><strong>Qualidade do Sono:</strong> Ruim</p>
+          
         </div>
       </ion-card-content>
     </ion-card>
   </div>
-  <ion-button routerLink="/login">Desconectar</ion-button>
+  <ion-button  routerLink="/login">Logar</ion-button>
+  <ion-button (click)="signOut()">Desconectar</ion-button>
 </ion-content>
 
 

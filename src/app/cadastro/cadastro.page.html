@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>cadastro</ion-title>
+    <ion-buttons slot="start" routerLink="/login">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -21,5 +24,11 @@
     <ion-label position="floating">Confirmar Senha</ion-label>
     <ion-input type="password" [(ngModel)]="confsenha"></ion-input>
   </ion-item>
-  <ion-button expand="block" (click)="fazerCadastro()">Cadastrar</ion-button>
-
+  <ion-button expand="block" (click)="register()">Cadastrar</ion-button>
+  <ion-toast
+  [isOpen]="isToastOpen"
+  message="Cadastro Inválido"
+  [duration]="5000"
+  (didDismiss)="setOpen(false)"
+></ion-toast>
+</ion-content>

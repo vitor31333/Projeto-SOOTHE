@@ -20,6 +20,11 @@
     width: 100%; 
 }
 
+.texto-card {
+    text-align: center;
+    color: #151F16;
+}
+
 ion-card {
     background-color: #ebf8ea;
 }
@@ -41,4 +46,6 @@ ion-button {
     align-items: center;
     margin: 0 30%;
     margin-top: -90px;
+    margin-bottom: -120px;
   }
+
